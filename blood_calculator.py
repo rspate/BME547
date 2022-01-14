@@ -60,7 +60,7 @@ def LDL_driver():
 def check_total(total_value):
 	if total_value < 200:
 		answer = "Normal"
-	elif 200 < LDL_value <= 239:
+	elif 200 < total_value <= 239:
 		answer = "Borderline High"
 	else:
 		answer = "High"
