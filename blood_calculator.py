@@ -62,5 +62,10 @@ def check_total(total_value):
 	else:
 		answer = "High"
 	return answer
+
+def total_driver():
+	total_value = accept_input("total cholesterol")
+	classification = check_total(total_value)
+	print_result("total cholesterol", total_value, classification)	
 	
 interface()
