@@ -1,5 +1,5 @@
 def interface():
-	print("Blood Test Analysis")
+	print("Blood Test Analysis:")
 	keep_running = True
 	while keep_running:
 		print("Options:")
