@@ -28,8 +28,7 @@ def print_result(test_name, test_value, test_class):
     out_string = "The test value of {} for {} is {}".format(
         test_value, test_name, test_class)
     print(out_string)
-
-
+    
 def check_HDL(HDL_value):
     if HDL_value >= 60:
         answer = "Normal"
@@ -56,8 +55,7 @@ def check_LDL(LDL_value):
     else:
         answer = "Very High"
     return answer
-
-
+  
 def LDL_driver():
     LDL_value = accept_input("LDL")
     classification = check_LDL(LDL_value)
@@ -77,7 +75,8 @@ def check_total(total_value):
 def total_driver():
     total_value = accept_input("total cholesterol")
     classification = check_total(total_value)
-    print_result("total cholesterol", total_value, classification)
+    print_result("total cholesterol", total_value, classification) 
 
 
-interface()
+if __name__ == "__main__":
+    interface()
